@@ -1,0 +1,17 @@
+<select class="form-control text-center" id="listaCurrent" name="selectListaCurrent">
+    <option value="">Seleccione un destino...</option>
+</select>
+<button class="btn btn-success mt-3" id="btnSelectLocation" >Confirmar destino seleccionado</button>
+
+<script type="text/javascript">
+
+
+    select = document.getElementById("listaCurrent");
+    for(cds in objMarkers){
+        option = document.createElement("option");
+        option.value =objMarkers[cds].coordenadas;
+        option.text = objMarkers[cds].parada;
+        select.appendChild(option);       
+    }
+    
+</script>

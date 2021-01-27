@@ -1,0 +1,52 @@
+body, html{
+    
+    margin: 0;
+    padding: 0;
+    
+}
+body { 
+    height: 100%;
+    margin:0px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ), url(../img/pachus.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+.card-main{
+    margin-top: 100px ;
+    background-color: rgba(245, 245, 245, .8);
+    
+}
+
+.nav-tabs{
+    width: 100%;
+}
+
+.nav-tabs li {
+    width: 33%;
+    font-weight: 700;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #f1f1f1;
+  background-color: #96d42b;
+  border-color:  #96d42b;
+}
+
+#resultDistancia::after{
+    content: " Km"
+}
+
+#resultTarifa::before{
+    content: "$ "
+}
+
+#resultTarifaNocturna::before{
+    content: "$ "
+}

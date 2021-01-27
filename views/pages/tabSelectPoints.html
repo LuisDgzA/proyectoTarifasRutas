@@ -1,0 +1,32 @@
+<h5 class="card-title text-center">Escoge 2 punstos de la lista</h5>
+<p class="card-text bloqueCurrentLocation">Escoge un punto en el mapa haciendo doble click, confírmelo y posterior escoga el segundo.</p>
+<select class="form-control text-center mb-3" id="listaPoint1" name="selectListaCurrent">
+    <option value="">Seleccione un origen...</option>
+</select>
+<select class="form-control text-center mb-3" id="listaPoint2" name="selectListaCurrent">
+    <option value="">Seleccione un destino...</option>
+</select>
+<button class="btn btn-success" id="btnConfirmSelect2Points" style="display: none;" >Confirmar puntos seleccionados</button>
+
+
+
+<script type="text/javascript">
+
+
+    select = document.getElementById("listaPoint1");
+    for(cds in objMarkers){
+        option = document.createElement("option");
+        option.value =objMarkers[cds].coordenadas;
+        option.text = objMarkers[cds].parada;
+        select.appendChild(option);       
+    }
+
+    select = document.getElementById("listaPoint2");
+    for(cds in objMarkers){
+        option = document.createElement("option");
+        option.value =objMarkers[cds].coordenadas;
+        option.text = objMarkers[cds].parada;
+        select.appendChild(option);       
+    }
+    
+</script>
