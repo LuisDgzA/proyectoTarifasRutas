@@ -34,9 +34,9 @@ body {
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #f1f1f1;
-  background-color: #96d42b;
-  border-color:  #96d42b;
+    background: #06d6a0;
+    color: #fff;
+    border-color:  #06d6a0;
 }
 
 #resultDistancia::after{
