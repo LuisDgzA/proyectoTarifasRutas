@@ -164,7 +164,7 @@ $(document).on('click', "#btnFindMe", function(event){
                 // let avisoEncontrarme = "<p>Haga doble click en el destino que quiera.</p>";
                 // let btnListaEncontrarme = "<button id='' type='button' class='btn btn-primary btn-block mt-3'>Seleccionar de una lista de lugares</button>";
                 let avisoConfirmar = "<p class='mt-3 bloqueCurrentLocation'>Confirme su ubicación.</p>";
-                let btnConfirmar = "<button id='confirmarCurrentLocation' type='button' class='btn btn-success mt-3 bloqueCurrentLocation'>Confirmar ubicación</button>";
+                let btnConfirmar = "<button id='confirmarCurrentLocation' type='button' class='btn btn-confirm mt-3 bloqueCurrentLocation'>Confirmar ubicación</button>";
                 if(flagFindMe == false){
                     $("#tabContentCurrent").append(avisoConfirmar + btnConfirmar); 
                     flagFindMe = true;        

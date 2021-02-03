@@ -32,11 +32,68 @@ body {
     font-weight: 700;
 }
 
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-item.show .nav-link {
+.nav .nav-item .nav-link.active {
     background: #06d6a0;
     color: #fff;
     border-color:  #06d6a0;
+}
+
+.nav .nav-item .nav-link {
+    background: transparent;
+    color: #03071e;
+}
+
+.nav .nav-item .nav-link:hover {
+    background: #06d6a0;
+    color: #fff;
+    border-color:  #06d6a0;
+}
+
+#myMap{
+    height: 600px;
+    display:none;
+    border-radius: 20px;
+}
+
+.btn-confirm{
+    background: #A07178;
+    color : #fff;
+}
+
+.btn-primary{
+    background: #118ab2;
+    color: #fff;
+    border-color:   #118ab2;
+}
+
+.btn.btn-primary:hover {
+    background: #0c6886;
+    color: #fff;
+    border-color:    #0c6886;
+}
+
+.btn.btn-primary.focus,
+.btn.btn-primary:focus {
+    background: #0c6886;
+    color: #fff;
+    border-color:    #0c6886;
+}
+.btn.btn-primary.active,
+.btn.btn-primary:active {
+    background: #0c6886;
+    color: #fff;
+    border-color:    #0c6886;
+}
+
+.btn.btn-primary.active.focus,
+.btn.btn-primary.active:focus,
+.btn.btn-primary.active:hover,
+.btn.btn-primary:active.focus,
+.btn.btn-primary:active:focus,
+.btn.btn-primary:active:hover {
+    background: #0c6886;
+    color: #fff;
+    border-color:    #0c6886;
 }
 
 #resultDistancia::after{
