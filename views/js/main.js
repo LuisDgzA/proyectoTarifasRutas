@@ -159,6 +159,14 @@ $(document).on('click', "#btnFindMe", function(event){
                 /** mostrar el mapa */
                 myMap.setView(ubicacionActual,17);
 
+                fetch('https://www.googleapis.com/analytics/v3/data/realtime')
+                .then(response => response.json())
+                .then(arrayPokemon =>{
+                   debugger
+                })
+
+
+
                 /** informar al usuario si es su ubicación */
                 Swal.fire('Si no es su ubicación, por favor revise su conexión a internet y vuelva a presionar el botón de "encontrarme".', '', 'info');
                 // let avisoEncontrarme = "<p>Haga doble click en el destino que quiera.</p>";
